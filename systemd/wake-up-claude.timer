@@ -1,0 +1,10 @@
+[Unit]
+Description=Run Wake up Claude daily
+
+[Timer]
+OnCalendar=*-*-* 08:00:00 Europe/Belgrade
+Persistent=true
+Unit=wake-up-claude.service
+
+[Install]
+WantedBy=timers.target

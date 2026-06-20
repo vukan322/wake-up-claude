@@ -1,0 +1,8 @@
+[Unit]
+Description=Wake up Claude
+
+[Service]
+Type=oneshot
+EnvironmentFile=%h/.wake-up-claude/display.env
+WorkingDirectory=%h/Documents/Work/wake-up-claude
+ExecStart=%h/.nvm/versions/node/v22.22.2/bin/node %h/Documents/Work/wake-up-claude/dist/index.js
